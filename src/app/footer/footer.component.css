@@ -1,0 +1,9 @@
+.footer {
+    background-color: #916000;
+}
+
+.footer_image {
+    width: 1920px;
+    height: 600px;  
+    overflow: hidden;
+}

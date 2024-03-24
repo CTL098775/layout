@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styles: []
+  styleUrls:[]
 })
 export class AppComponent {
-  title = 'layout';
+  title = '香水電商';
 }

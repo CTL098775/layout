@@ -1,0 +1,109 @@
+.banner {
+    background-image: url('../../assets/img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 60px;
+    height: 95vh ;
+}
+
+.btn-round-shop {
+    border-radius: 30px;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    height: 60px;
+    width: 75%;
+    font-size: 28px;
+    // transition: all 0.3s ease;
+    background: transparent;
+    &:hover {
+        background-color:rgba(255, 255, 255, 0.297);
+      }
+}
+
+.btn-round-plan {
+    border-radius: 30px;
+    border: 2px solid #000000;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: transparent;
+    &:hover {
+        background-color:rgb(0, 0, 0);
+        color: #FFFFFF;
+
+      }
+}
+    
+@media screen and (max-width: 991px) {
+    button.font-size {
+      font-size: 28px;
+      width: 100%;
+    }
+  }
+
+    .hover-shadow-dark {
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      &:hover{
+        -webkit-box-shadow: 3px 3px 3px 3px rgba(170, 170, 170, 0.3);
+        box-shadow: 3px 3px 3px 3px rgba(170, 170, 170, 0.3);
+        -webkit-transform: translate(-3px, -3px);
+        -ms-transform: translate(-3px, -3px);
+        transform: translate(-3px, -3px);
+      }
+    }
+      
+.subscribe{
+    background-image: url('../../assets/img/subscribe.jpg');
+    background-size: cover;   
+    background-repeat: no-repeat; 
+    background-position: center center;
+    // padding-top: 312px;
+    margin-top: 60px;    
+
+    .subscribe_wrap {
+        margin-bottom: 112px;
+    }
+    .subscribe_info {
+        font-size: 32px;
+        font-weight: 600;
+        color: #8D8D8D;
+        font-weight: bold;
+    }
+    .container {
+        height: 600px;
+    }
+} 
+
+@media screen and (max-width: 576px) {
+    .subscribe {
+      background-position: 0 0;
+    }
+}
+
+.catalog {
+    background-color: #E0E0E0;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #916000;
+}
+
+.input-group{
+    width: 100%;
+    @media (min-width:540px) {
+        width: 70%;
+    }
+}

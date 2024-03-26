@@ -1,0 +1,101 @@
+/* You can add global styles to this file, and also import other style files */
+$button_color:pink;
+$font-color-1:white;
+$font-color-2:white;
+$font-color-3:#000000;
+$font-weight: bold;
+$font: normal;
+$background-color:#916000;
+$icon-color: #8D8D8D;
+
+.container {
+  padding-left:15px;
+  padding-right:15px;
+  max-width: 1140px; 
+  margin: 0 auto;    
+}
+
+li {
+  list-style-type: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: $icon-color;
+}
+
+// 電腦版上的字體大小設定
+@media screen and (min-width: 992px) {
+    p.font-size-1 {
+      font-size: 40px;
+      color: $font-color-1;
+      font-weight: $font-weight;
+      margin: 0px 0px 8px;
+    }
+    p.font-size-2 {
+      font-size: 24px;
+      color: $font-color-2;
+    }
+    p.font-size-3 {
+      font-size: 32px;
+        color: $font-color-3;
+        font-weight: $font-weight;
+    }
+    p.font-size-4 {
+      font-size: 20px;
+        color: $font-color-3;
+        font: $font;
+    }    
+    p.font-size-5 {
+      font-size: 24px;
+      color: $font-color-3;
+      font-weight: $font-weight;
+    }
+    p.font-size-6 {
+      font-size: 16px;
+      color: $font-color-3;
+      margin-bottom: 500px;
+    }
+  }
+
+  // 手機版上的字體大小設定
+  @media screen and (max-width: 991px) {
+    p.font-size-1 {
+      font-size: 32px;
+      color: $font-color-1;
+      font-weight: $font-weight;
+      margin: 0px 0px 8px;
+    }
+    p.font-size-2 {
+      font-size: 20px;
+      color: $font-color-2;
+    }
+    p.font-size-3 {
+      font-size: 32px;
+      color: $font-color-3;
+      font-weight: $font-weight;
+    }
+    p.font-size-4 {
+      font-size: 20px;
+    }   
+    p.font-size-5 {
+      font-size: 24px;
+      color: $font-color-3;
+      font-weight: $font-weight;
+    }
+    p.font-size-6 {
+      font-size: 16px;
+      color: $font-color-3;
+      margin-bottom: 52px;
+    }
+  }
+
+ .btn-color {
+    background-color: $background-color;
+    color: $font-color-1;
+    &:hover {
+      background-color: $background-color;
+      color: $font-color-1;
+    }
+ }

@@ -1,24 +1,36 @@
-<nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container container-fluid">
-      <h1 class="logo"><a href="#">
-        <img src="https://raw.githubusercontent.com/as60160/HexSchool-2021-04-d-Perfume/main/public/img/d%E2%80%99Perfume.png"
-        alt="logo">
-      </a></h1>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-shop"></i>Product</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-user"></i>log in</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-heart"></i>Wishlist</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i><span>Cart(3)</span><em>3</em>></a></li>
-        </ul>
-      </div>
+<nav class="position-relative ">
+  <div class="container">
+    <div class="row justify-content-between">
+      <h1 class="col col-md-5">
+        <img src="../../assets/img/dPerfume.png" alt="Navbar Logo">
+      </h1>
+
+      <ul class="nav_m-menu col d-flex justify-content-end d-md-none mb-0 ps-0 align-items-center">
+        <li class="position-relative">
+          <a class="shop_icon" href="javascript:;">
+            <span class="material-icons c_gray">shopping_cart</span>
+            <span class="position-absolute top-0 start-100 translate-middle notify">1</span>
+          </a>
+        </li>
+        <li class="ms-5"><a href="javascript:;" (click)="toggleMenu()"><span class="material-icons c_gray">menu</span></a></li>
+      </ul>
+
+      <ul class="nav_pc_menu d-none col-md-5 d-md-flex justify-content-between align-items-md-center mb-0">
+        <li><a class="d-flex align-items-center c_ms_32 c_gray" href="javascript:;"><span class="material-icons c_me">store</span>Product</a></li>
+        <li><a class="d-flex align-items-center c_ms_32 c_gray" href="javascript:;"><span class="material-icons c_me">person</span>log in</a></li>
+        <li><a class="d-flex align-items-center c_ms_32 c_gray" href="javascript:;"><span class="material-icons c_me">favorite</span>Wishlist</a></li>
+        <li><a class="d-flex align-items-center c_ms_32 c_gray" href="javascript:;"><span class="material-icons c_me">shopping_cart</span>Cart(3)</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
-<div>
-  <a href="#">
-  <img src="assets/img/banner.jpg">
-  </a>
+
+<div class="menu position-absolute w-100 d-md-none mb-0" style="background-color: #8d8d8d;" *ngIf="isShowMenu" [ngClass]="{'fade-in':isShowMenu}">
+  <ul class="mb-0 ps-0">
+    <li class="py-3 text-center border-bottom border-light border-2"><a href="javascript:;" class="fs-20" style="color: white;">Product</a></li>
+    <li class="py-3 text-center border-bottom border-light border-2"><a href="javascript:;" class="fs-20" style="color: white;">Wishlist</a></li>
+    <li class="py-3 text-center border-bottom border-light border-2"><a href="javascript:;" class="fs-20" style="color: white;">Blog</a></li>
+    <li class="py-3 text-center border-bottom border-light border-2"><a href="javascript:;" class="fs-20" style="color: white;">Contact</a></li>
+    <li class="py-3 text-center"><a href="javascript:;" class="fs-20" style="color: white;">log in</a></li>
+  </ul>
 </div>
